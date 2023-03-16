@@ -1,0 +1,16 @@
+{
+  "name": "Umai",
+  "description": "In-house analytics solution for Supertype powered by Umami",
+  "keywords": ["analytics", "charts", "statistics", "web-analytics"],
+  "website": "https://supertype.ai",
+  "repository": "https://github.com/supertypeai/umai",
+  "addons": ["heroku-postgresql"],
+  "env": {
+    "HASH_SALT": {
+      "description": "Used to generate unique values for your installation",
+      "required": true,
+      "generator": "secret"
+    }
+  },
+  "success_url": "/"
+}
